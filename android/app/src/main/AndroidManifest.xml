@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bankly_task">
    <application
-        android:label="bankly_task"
+        android:label="Bankly Task"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
