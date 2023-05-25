@@ -171,7 +171,6 @@ class _SearchWidgetState extends State<SearchWidget> {
                     },
                     decoration: InputDecoration(
                       hintText: "Search",
-                      //suffix:
                       border: InputBorder.none,
                       hintStyle: TextStyle(
                           fontSize: 10.sp,

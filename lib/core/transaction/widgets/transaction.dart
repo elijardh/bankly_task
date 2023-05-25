@@ -1,6 +1,3 @@
-import 'dart:developer';
-
-import 'package:bankly_task/app/logic/credit_debit_filtering.dart';
 import 'package:bankly_task/app/presentations/colors.dart';
 import 'package:bankly_task/app/presentations/error_snackbar.dart';
 import 'package:bankly_task/app/presentations/texts.dart';

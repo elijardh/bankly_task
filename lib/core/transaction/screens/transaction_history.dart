@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:bankly_task/app/extensions.dart';
 import 'package:bankly_task/app/presentations/colors.dart';
 import 'package:bankly_task/app/presentations/custom_indicator.dart';
@@ -39,7 +37,6 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: "#FBFBFF".toColor(),
-      //backgroundColor: const Color.fromRGBO(244, 247, 255, 1),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(143.h),
         child: Container(
