@@ -58,13 +58,24 @@ class _AllTransactionsState extends State<AllTransactions> {
           return SizedBox(
             height: 100.h,
             width: 200.w,
-            child: Center(
-              child: NormalText(
-                text: "Server error, try again later",
-                textColor: XColors.red,
-                textAlign: TextAlign.center,
-                fontSize: 14,
-              ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                NormalText(
+                  text: "Server error, try again later",
+                  textColor: XColors.red,
+                  textAlign: TextAlign.center,
+                  fontSize: 14,
+                ),
+                SizedBox(
+                  height: 10.h,
+                ),
+                GestureDetector(
+                    onTap: () {
+                      context.read<TransactionBloc>().add(GetTransaction());
+                    },
+                    child: const Icon(Icons.refresh))
+              ],
             ),
           );
         } else if (state.status.isSuccess) {
